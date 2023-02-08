@@ -5,21 +5,153 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shecodes</title>
-    <style></style>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(255, 200, 124) 0%,
+          rgb(252, 251, 121) 90%
+        );
+      }
+      h1 {
+        text-align: center;
+        font-weight: 600;
+        background-color: rgb(222, 155, 21);
+        color: aliceblue;
+        border-radius: 20px;
+      }
+      h2 {
+        text-align: center;
+        background-color: black;
+        color: rgb(222, 155, 21);
+        border-radius: 20px;
+      }
+      h3 {
+        text-align: center;
+        background-color: rgb(222, 155, 21);
+        color: aliceblue;
+        font-size: larger;
+        border-radius: 20px;
+      }
+      h4 {
+        text-align: center;
+        background-color: black;
+        color: rgb(222, 155, 21);
+        font-size: larger;
+        border-radius: 20px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        margin: 0 15px;
+      }
+
+      button {
+        font-size: 20px;
+        color: white;
+        display: block;
+        margin: 20px auto;
+        padding: 15px 20px;
+        background: #f1bd5d;
+        border-radius: 10px;
+        border: 1px solid #a54b0a;
+        border-radius: 30px;
+        box-shadow: 2px 5px 5px rgb(0 0 0 / 20%);
+        transition: all 200ms ease-in-out;
+      }
+      nav {
+        display: inline-block;
+        border: 1px solid brown;
+        padding: 15px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      img {
+        width: 600px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        border: #a54b0a;
+        box-shadow: 2px 5px 5px rgb(0 0 0/ 30%);
+      }
+      button:hover {
+        background: white;
+        color: #a54b0a;
+        cursor: pointer;
+      }
+      .bees img {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        animation-name: BEEBEE;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+        direction: alternate-reverse;
+      }
+      @keyframes BEEBEE {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+          transform: rotateZ(0deg);
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+          transform: rotateZ(90deg);
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+          transform: rotateZ(90deg);
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+          transform: rotateZ(90deg);
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+          transform: rotateZ(0deg);
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1><u>BeeZ Facts!!!</u></h1>
+    <h1><u>BeeZ Facts!!!🐝</u></h1>
     <button>Save BeeZ Now!!!!</button>
-    <ul>
-      <li>
-        <a class="Org" href="" target=_"blank">Organizations</a>
-      </li>
-    </ul>
+    <div class="bees">
+      <img src="bees04.png" />
+    </div>
 
-    
-    <hr />
+    <nav>
+      <a
+        href="https://thebeeconservancy.org/#:~:text=The%20Bee%20Conservancy%20is%20a,%2C%20habitat%20creation%2C%20and%20advocacy."
+        target="blank"
+        >Organizations</a
+      >
 
-    <h4>History Of Bees</h4>
+      <a
+        href="https://www.nytimes.com/2016/06/10/science/bees-asexual-south-africa.html#:~:text=The%20typical%20story%20of%20reproduction,sterile%20when%20they%20detect%20it."
+        target="blank"
+      >
+        More Readings</a
+      >
+
+      <a
+        href="https://www.google.com/search?q=documentary+about+bees&rlz=1C5CHFA_enUS991US991&biw=879&bih=911&tbm=vid&sxsrf=AJOqlzUqaCnwVmCKx-jNbSXjWG48iyJUiw%3A1675876236484&ei=jNfjY5eaHbe1qtsP85SAqA8&oq=&gs_lcp=Cg1nd3Mtd2l6LXZpZGVvEAEYATIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJzoECCMQJzoJCAAQFhAeEPEEOgsIABAWEB4Q8QQQCjoGCAAQFhAeUABYAGDGG2gCcAB4AIABXogBXpIBATGYAQCgAQGwAQrAAQE&sclient=gws-wiz-video#fpstate=ive&vld=cid:133ff823,vid:I6C9th9rO0U"
+        target="blank"
+        >Videos</a
+      >
+    </nav>
+
+    <h2>History Of Bees</h2>
 
     <p>
       Bees have existed for 130 million years and helped many plants depend on
@@ -65,7 +197,7 @@
       favorite foods!
     </p>
 
-    <h5>Interesting Facts</h5>
+    <h4>Interesting Facts</h4>
 
     <ol>
       <li>There are over 20,000 species of bees in the world.</li>
@@ -101,5 +233,15 @@
         Bees are social insects and live in colonies of up to 80,000 bees.
       </li>
     </ol>
+    <div class="mail">
+      <span class="social">Email:</span>alexiahall306@icloud.com
+    </div>
   </body>
+  <script>
+    let apple = 1;
+
+    function Applepie() {
+      console.log(apple);
+    }
+  </script>
 </html>
