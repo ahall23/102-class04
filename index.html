@@ -238,10 +238,18 @@
     </div>
   </body>
   <script>
-    let apple = 1;
+    function apply() {
+      let name = prompt("What is your name?");
+      let age = prompt("how old are you?");
 
-    function Applepie() {
-      console.log(apple);
+      if (age > 18) {
+        alert("😎 Cool Beez!" + " " + name + " " + "Come Save some Beez!🐝");
+      } else {
+        alert("🥹" + " " + name + " " + "Maybe next time");
+      }
     }
+
+    let applyButton = document.querySelector("button");
+    applyButton.addEventListener("click", apply);
   </script>
 </html>
