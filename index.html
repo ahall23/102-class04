@@ -66,6 +66,8 @@
         padding: 15px;
         display: flex;
         justify-content: space-evenly;
+        background-color: antiquewhite;
+        font-family: Georgia, "Times New Roman", Times, serif;
       }
       img {
         width: 600px;
@@ -91,31 +93,26 @@
       }
       @keyframes BEEBEE {
         0% {
-          background-color: red;
           left: 0px;
           top: 0px;
           transform: rotateZ(0deg);
         }
         25% {
-          background-color: yellow;
           left: 200px;
           top: 0px;
           transform: rotateZ(90deg);
         }
         50% {
-          background-color: blue;
           left: 200px;
           top: 200px;
           transform: rotateZ(90deg);
         }
         75% {
-          background-color: green;
           left: 0px;
           top: 200px;
           transform: rotateZ(90deg);
         }
         100% {
-          background-color: red;
           left: 0px;
           top: 0px;
           transform: rotateZ(0deg);
@@ -127,7 +124,7 @@
     <h1><u>BeeZ Facts!!!🐝</u></h1>
     <button>Save BeeZ Now!!!!</button>
     <div class="bees">
-      <img src="bees04.png" />
+      <img alt="bees gif" src="bees04.png" />
     </div>
 
     <nav>
@@ -170,7 +167,10 @@
       industry, and they are also important pollinators of wild plants.
     </p>
 
-    <img src="https://www.westernpest.com/wp-content/uploads/honey-bee-4.jpg" />
+    <img
+      alt="bee image"
+      src="https://www.westernpest.com/wp-content/uploads/honey-bee-4.jpg"
+    />
     <hr />
     <h3>Why should we care about bees?</h3>
 
@@ -211,7 +211,7 @@
       <li>Some bees can hibernate for up to six months.</li>
       <li>
         Bees are excellent pollinators and are responsible for pollinating over
-        70% of the world’s food crops.
+        70% of the worlds food crops.
       </li>
       <li>
         Bees are responsible for making honey by collecting nectar from flowers.
@@ -239,16 +239,18 @@
   </body>
   <script>
     function apply() {
-      let name = prompt("What is your name?");
-      let age = prompt("how old are you?");
+      let name = prompt("What is your name Beezuiful?");
+      let age = parsentInt(prompt("How old are you?"));
 
+      if (isNaN(age)) {
+        alert("EORROR please try again🫤");
+      }
       if (age > 18) {
         alert("😎 Cool Beez!" + " " + name + " " + "Come Save some Beez!🐝");
       } else {
-        alert("🥹" + " " + name + " " + "Maybe next time");
+        alert("🥹" + " " + name + " " + "EORROR Maybe next time");
       }
     }
-
     let applyButton = document.querySelector("button");
     applyButton.addEventListener("click", apply);
   </script>
