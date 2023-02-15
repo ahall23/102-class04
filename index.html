@@ -235,6 +235,7 @@
       </li>
     </ol>
     <button onclick="RateUs()">Rate Us!</button>
+
     <div class="mail">
       <span class="social">Email:</span>alexiahall306@icloud.com
     </div>
@@ -259,7 +260,8 @@
     function RateUs() {
       let userAns = prompt("Rate the information quality 1-5");
       for (let x = 0; x < userAns; x++) {
-        document.getElementById(RateUs);
+        document.getElementById("RateUs").innerHTML +=
+          "<img src= https://www.vectorstock.com/royalty-free-vector/bee-logo-vector-42652050/>";
       }
     }
     let applyButton = document.querySelector("button");

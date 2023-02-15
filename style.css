@@ -59,6 +59,8 @@
         padding: 15px;
         display: flex;
         justify-content: space-evenly;
+        background-color: antiquewhite;
+        font-family: Georgia, "Times New Roman", Times, serif;
       }
       img {
         width: 600px;
@@ -82,34 +84,32 @@
         animation-iteration-count: infinite;
         direction: alternate-reverse;
       }
+
       @keyframes BEEBEE {
         0% {
-          background-color: red;
           left: 0px;
           top: 0px;
           transform: rotateZ(0deg);
         }
         25% {
-          background-color: yellow;
           left: 200px;
           top: 0px;
           transform: rotateZ(90deg);
         }
         50% {
-          background-color: blue;
           left: 200px;
           top: 200px;
           transform: rotateZ(90deg);
         }
         75% {
-          background-color: green;
           left: 0px;
           top: 200px;
           transform: rotateZ(90deg);
         }
         100% {
-          background-color: red;
           left: 0px;
           top: 0px;
           transform: rotateZ(0deg);
         }
+      
+    
