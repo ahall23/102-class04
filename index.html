@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shecodes</title>
+    <title>Class 04-08</title>
     <style>
       body {
         background: radial-gradient(
@@ -91,6 +91,7 @@
         animation-iteration-count: infinite;
         direction: alternate-reverse;
       }
+
       @keyframes BEEBEE {
         0% {
           left: 0px;
@@ -233,6 +234,7 @@
         Bees are social insects and live in colonies of up to 80,000 bees.
       </li>
     </ol>
+    <button onclick="RateUs()">Rate Us!</button>
     <div class="mail">
       <span class="social">Email:</span>alexiahall306@icloud.com
     </div>
@@ -240,7 +242,7 @@
   <script>
     function apply() {
       let name = prompt("What is your name Beezuiful?");
-      let age = parsentInt(prompt("How old are you?"));
+      let age = prompt("How old are you?");
 
       if (isNaN(age)) {
         alert("EORROR please try again🫤");
@@ -249,6 +251,15 @@
         alert("😎 Cool Beez!" + " " + name + " " + "Come Save some Beez!🐝");
       } else {
         alert("🥹" + " " + name + " " + "EORROR Maybe next time");
+      }
+    }
+
+    let userAns = "";
+
+    function RateUs() {
+      let userAns = prompt("Rate the information quality 1-5");
+      for (let x = 0; x < userAns; x++) {
+        document.getElementById(RateUs);
       }
     }
     let applyButton = document.querySelector("button");
