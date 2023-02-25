@@ -1,11 +1,17 @@
 {
   "folders": [
-	{
-		"path": "."
-	},
-	{
-		"path": "../https-ahall23.github.io-reading-notes-"
-	}
-],
+    {
+      "path": "."
+    },
+    {
+      "path": "../https-ahall23.github.io-reading-notes-"
+    },
+    {
+      "path": "../201-class01-lab"
+    },
+    {
+      "path": "../201-lab02"
+    }
+  ],
   "settings": {}
 }
